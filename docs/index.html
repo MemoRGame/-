@@ -4,25 +4,126 @@
         <meta charset="utf-8">
         <title>牛込輝</title>
         <style>
+            .TitleBar{
+                width:100vw;
+                height:30vh;
+                font-size:3vw;
+                border:1px solid #2adb02;
+                background-color:#2adb02;
+                padding:30vh 90vw 0 0;
+                font-style:italic;
+            }
+
             .img-hikaru{
-                width:10vw;
+                width:20vw;
                 height:auto;
+                margin-right: 1vw;
+            }
+
+            .img-youtube{
+                width:2vw;
+                height:auto;
+                padding-left:1px;
+            }
+
+            .img-x{
+                width:2vw;
+                height:auto;
+                padding-left:1px;
+            }
+
+            .img-tiktok{
+                width:2vw;
+                height:auto;
+                padding-left:1px;
+            }
+
+            #profile {
+                display: flex; /* 横並びに配置 */
+            }
+
+            #profile-text-1 {
+                display: block;
+            }
+
+            #profile-text-2 {
+                display: block;
+                margin-left:1vw;
+            }
+
+            #profile-text-3 {
+                display: block;
+                margin-left:1vw;
+            }
+
+            ul{
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            h1{
+                margin-bottom: 0;
+            }
+
+            table {
+                width: 100%; /* 表の幅を調整 */
+                border-collapse: collapse; /* 枠線を統一 */
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            th, td {
+                border: 1px solid black; /* 枠線を追加 */
+                padding: 3px; /* セル内の余白 */
+                text-align: center; /* 文字を中央揃え */
+            }
+
+            .profile-2-ul{
+                font-size:1.5vw;
+            }
+
+            .profile-3-ul{
+                font-size:1.5vw;
             }
         </style>
     </head>
     <body>
-        <h1>牛込輝</h1>
-        <img src="picture/hikaru.png" class="img-hikaru">
-        <h2>主な経歴</h2>
-        <ul>
-            <li>「kyo-suki」出演</li>
-            <li>英検一級受験</li>
-            <li>Yo-Tube登録者数100万人超え</li>
-            <li>プリペイドカード配布企画を実施</li>
-        </ul>
-        <h2>関連SNS</h2>
-        <a href="https://www.youtube.com/@%E7%89%9B%E8%BE%BC%E8%BC%9D"> 牛込輝Youtube</a><br>
-        <a href="https://x.com/hikaru_ushigome">牛込輝X(旧:Twitter)</a><br>
-        <a href="https://www.tiktok.com/@hikaru_ushigome">牛込輝TikTok</a>
+        <span class="TitleBar">Hikaru</span>
+        <div id="profile">
+            <img src="picture/hikaru.png" class="img-hikaru">
+            <div id="profile-text-1">             
+                <h1><ruby>牛込輝<rt>うしごめ ひかる</rt></ruby></h1>
+                <table>
+                    <tr><td>生年月日</td><td>2000年1月1日</td></tr>
+                    <tr><td>年齢</td><td>25歳</td></tr>
+                    <tr><td>職業</td><td>弁護士 兼 Youtuber</td></tr>
+                    <tr><td>特技</td><td>論破</td></tr>
+                    <tr><td>趣味</td><td>アニメ鑑賞、聖地巡礼</td></tr>
+                    <tr><td>部活動(中学生)</td><td>陸上部(部員)</td></tr>
+                    <tr><td>部活動(高校生)</td><td>漫画研究部(部長)</td></tr>
+                    <tr><td>最終学歴</td><td>開成高校中退</td></tr>
+                </table>
+            </div>
+            <div id="profile-text-2">
+                <h1>TV出演</h1>
+                <ul class="profile-2-ul">
+                    <li>「H-1グランプリ2009」決勝戦進出</li>
+                    <li>「kyo-sukiになりました」2010年出演</li>
+                    <li>「警察24時」2011年出演</li>
+                    <li>「刑務所での暮らし」2015年出演</li>
+                    <li>「密着!生活保護の実態」2016年出演</li>
+                    <li>TVドラマ「ドクターX」2020年出演</li>
+                    <li>「みんなの競馬」2025年出演</li>
+                </ul>
+            </div>
+            <div id="profile-text-3">
+                <h1>本人SNS</h1>
+                <ul class="profile-3-ul">
+                    <li><a href="https://www.youtube.com/@%E7%89%9B%E8%BE%BC%E8%BC%9D"> 牛込輝Youtube</a><img src="picture/youtube.png" class="img-youtube"></li>
+                    <li><a href="https://x.com/hikaru_ushigome">牛込輝X(旧:Twitter)</a><img src="picture/x.png" class="img-x"></li>
+                    <li><a href="https://www.tiktok.com/@hikaru_ushigome">牛込輝TikTok</a><img src="picture/tiktok.png" class="img-tiktok"></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
